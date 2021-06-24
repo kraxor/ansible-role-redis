@@ -34,6 +34,12 @@ Close a connection after a client is idle `N` seconds. Set to `0` to disable tim
 
 Log level and log location (valid levels are `debug`, `verbose`, `notice`, and `warning`).
 
+    redis_syslog_enabled: "no"
+    redis_syslog_ident: "redis"
+    redis_syslog_facility: "local0"
+
+Log to syslog. Disabled by default.
+
     redis_databases: 16
 
 The number of Redis databases.
